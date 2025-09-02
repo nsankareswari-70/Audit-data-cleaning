@@ -39,3 +39,4 @@ Make the case as proper for the Region column
 =proper(h2)
 
 ### Final cleaned Data
+![img alt]()
