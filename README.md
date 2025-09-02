@@ -12,7 +12,7 @@
 - Outliers (1.2 M transaction is a huge number compare to other entries. Need to be verified.)
   
 ## Data Cleaning Process
-### Step 1: Highlight Blanks
+### Step 1: Highlight Blanks and Missing values
 Highlight all the blank cells and Fill it with N/A
 
 ### Step 2: 
