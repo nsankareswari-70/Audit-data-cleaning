@@ -11,3 +11,31 @@
 - Duplicates (INV001 and INV002 look like duplicates for the same customer, same amount)
 - Outliers (1.2 M transaction is a huge number compare to other entries. Need to be verified.)
   
+## Data Cleaning Process
+### Step 1: Highlight Blanks
+Highlight all the blank cells and Fill it with N/A
+
+### Step 2: 
+Replace all the 'limited' with 'Ltd' to maintain consistency
+Replace abc with ABC
+Remove all the . with nothing
+
+### Step 3:
+To make the Invoice_Date column format constistant - change to date(dd,mm,yyyy) format
+=TEXT(C2,"dd-mm-yyyy")
+
+### Step 4:
+Mark the negative values highlight it with Red. Used conditonal formating to highlight the cells with the value < 0
+
+### Step 5:
+Highlight the outlier value. Invoice amount 12000000 look like a outlier mark it with different colour for later verification
+
+### Step 6:
+Replace all the $ sign in the currency sign with 'USD' 
+Replace all the usd with 'USD'
+
+### Step 7:
+Make the case as proper for the Region column
+=proper(h2)
+
+### Final cleaned Data
